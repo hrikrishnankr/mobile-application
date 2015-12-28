@@ -6,16 +6,16 @@ header{
 	left: 0px;
 	right: 0px;
 	height: 150px;
-	background: #000;
+	background: #333333;
 }
 
 main{
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	top:150px;
+	top:152px;
 	bottom: 150px;
-	background: #fabec0;
+	background: ;
 	overflow: auto;
 	font-size: 50px;	
 }
@@ -26,7 +26,7 @@ footer{
 	right: 0px;
 	bottom: 0px;
 	height: 150px;
-	background-color: #000;
+	background-color: #fff;
 }
 
 header div{
@@ -54,19 +54,29 @@ header .text{
 }
 
 footer .menu{
-	color:white;
+	color:gray;
 	font-size: 60px;
 	height: 150px;
 	width: 100%;
 	text-align: center;
+	border-collapse: collapse;
+}
+
+footer .menu tr td{
+	border:2px solid #595959;
+	width: 50%;
+}
+
+footer .menu tr td:hover{
+	color:black;
 }
 
 main .popup{
 	position: fixed;
    	top:150px;
     bottom: 0px;
-    right: -400px;
-    width: 400px;
+    right: -600px;
+    width: 600px;
     background-color: rgba(0,0,0,0.8);
     color: white;
 }
