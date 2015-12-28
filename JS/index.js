@@ -2,17 +2,17 @@ toggle=0;
 window.onload=function(){
     toggle=0;
     document.getElementById("xyz").style.position="fixed";
-    document.getElementById("xyz").style.right="-600px";
+    document.getElementById("xyz").style.right="-50%";
 };
 function show(){
-   if(parseInt(document.getElementById("xyz").style.right)<=-6){
-      document.getElementById("xyz").style.right=parseInt(document.getElementById("xyz").style.right)+5+"px";
+   if(parseInt(document.getElementById("xyz").style.right)<=-2){
+      document.getElementById("xyz").style.right=parseInt(document.getElementById("xyz").style.right)+1+"%";
       setTimeout(show,5);
    }
 }
 function hide () {
-   if(parseInt(document.getElementById("xyz").style.right)>=-595){
-      document.getElementById("xyz").style.right=parseInt(document.getElementById("xyz").style.right)-5+"px";
+   if(parseInt(document.getElementById("xyz").style.right)>=-50){
+      document.getElementById("xyz").style.right=parseInt(document.getElementById("xyz").style.right)-1+"%";
       setTimeout(hide,5);
    }
 }
