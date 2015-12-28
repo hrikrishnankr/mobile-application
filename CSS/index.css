@@ -1,0 +1,104 @@
+body{
+	/*position: relative;*/
+}
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top:0px;
+	height: 150px;
+	background: #333333;
+	font-size: 16px;
+}
+
+hr{
+	border: 1px solid white;
+}
+
+main{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top:152px;
+	bottom: 150px;
+	overflow: auto;
+	font-size: 16px;	
+}
+
+footer{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 150px;
+	background-color: #fff;
+}
+
+header div{
+	display: inline;
+	color: white;
+	font-size: 16px;
+}
+
+header .hamburger{
+	float: right;
+}
+
+header .logo{
+	float: left;
+	font-size: 130px;
+	color:red;
+}
+
+header .text{
+	position: absolute;
+	top:40px;
+	left: 130px;
+	right: 150px;
+	text-align: center;
+}
+
+footer .menu{
+	color:gray;
+	font-size: 60px;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+footer .menu tr td{
+	border:2px solid #595959;
+	width: 50%;
+}
+
+footer .menu tr td:hover{
+	color:black;
+}
+
+main .popup{
+	position: fixed;
+   	top:153px;
+    bottom: 0px;
+    right: -600px;
+    width: 600px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+main .popup div{
+	margin-left: 20px;
+}
+
+main .popup div a{
+	text-decoration: none;
+	display: block;
+	outline: none;
+	color:#fff;
+}
+
+@media screen and (min-width: ) {
+    body {
+        background-color: lightblue;
+    }
+}
