@@ -6,9 +6,8 @@ header{
 	left: 0px;
 	right: 0px;
 	top:0px;
-	height: 150px;
+	height: 75px;
 	background: #333333;
-	font-size: 16px;
 }
 
 hr{
@@ -30,7 +29,7 @@ footer{
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	height: 150px;
+	height: 75px;
 	background-color: #fff;
 }
 
@@ -44,9 +43,14 @@ header .hamburger{
 	float: right;
 }
 
+header .hamburger img{
+	height: 75px;
+	width: 75px;
+}
+
 header .logo{
 	float: left;
-	font-size: 130px;
+	font-size: 75px;
 	color:red;
 }
 
@@ -61,7 +65,7 @@ header .text{
 footer .menu{
 	color:gray;
 	font-size: 60px;
-	height: 150px;
+	height: 75px;
 	width: 100%;
 	text-align: center;
 	border-collapse: collapse;
