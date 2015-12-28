@@ -1,0 +1,72 @@
+body{
+	/*position: relative;*/
+}
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	height: 150px;
+	background: #000;
+}
+
+main{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top:150px;
+	bottom: 150px;
+	background: #fabec0;
+	overflow: auto;
+	font-size: 50px;	
+}
+
+footer{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 150px;
+	background-color: #000;
+}
+
+header div{
+	display: inline;
+	color: white;
+	font-size: 60px;
+}
+
+header .hamburger{
+	float: right;
+}
+
+header .logo{
+	float: left;
+	font-size: 130px;
+	color:red;
+}
+
+header .text{
+	position: absolute;
+	top:40px;
+	left: 130px;
+	right: 150px;
+	text-align: center;
+}
+
+footer .menu{
+	color:white;
+	font-size: 60px;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+}
+
+main .popup{
+	position: fixed;
+   	top:150px;
+    bottom: 0px;
+    right: -400px;
+    width: 400px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
