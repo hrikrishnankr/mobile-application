@@ -32,7 +32,7 @@ header .text{
 	margin-top: 29.5px;
 }
 
-header .hamburger{
+header .hamburger1{
 	float: right;
 	height: 75px;
 	width: 64px;
@@ -59,13 +59,6 @@ footer{
 	bottom: 2px;
 	height: 50px;
 	background-color: #fff;
-}
-
-header .hamburger img{
-	height: 75px;
-	width: 64px;
-	position: absolute;
-	right: 0px;
 }
 
 footer .menu{
@@ -106,9 +99,103 @@ main .popup div a{
 	outline: none;
 	color:#fff;
 }
-/*
-@media screen and (min-width: ) {
-    body {
-        background-color: lightblue;
-    }
-}*/
+
+.hamburger{
+	height: 40px;/*height=75px,width=75px*/
+	width: 40px;
+	/*border: 1px solid #000;*/
+	cursor: pointer;
+	position: absolute;
+	top:5px;
+	/*left: 50%;*/
+	display: block;
+}
+
+.upper, .middle, .lower{
+	width: 40px;
+	height: 10px;
+	/*border: 1px solid #000;*/
+	background-color: white;
+	border-radius: 4px;	
+	display: block;
+}
+
+.middle{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.easeout{
+			border :0px solid blue;	
+			animation-name: example3;
+    		animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
+		}
+
+		@keyframes example3 {
+    		from {background: white;}
+    		to {background: transparent;}
+		}
+
+		.pos{
+			transform-origin: left;
+			animation-name: example1;
+    		animation-duration: 1000ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
+		}
+
+		@keyframes example1 {
+    		from {transform: rotate(0deg);}
+    		to {transform: rotate(-46deg);}
+		}
+		.neg{
+			 transform-origin: left;
+			animation-name: example2;
+    		animation-duration: 1000ms;
+    		animation-fill-mode: forwards;
+    		animation-timing-function: ease;
+		}
+
+		@keyframes example2 {
+    		from {transform: rotate(0deg);}
+    		to {transform: rotate(+46deg);}
+		}
+
+		.easeIn{
+			animation-name: example4;
+    		animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;	
+		}
+
+		@keyframes example4{
+			from{background: transparent;}
+			to{background: white;}
+		}
+		.posRev{
+			transform-origin: left;
+			animation-name: example5;
+    		animation-duration: 1000ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
+		}
+
+		@keyframes example5 {
+    		from {transform: rotate(-46deg);}
+    		to {transform: rotate(0deg);}
+		}
+
+		.negRev{
+			 transform-origin: left;
+			animation-name: example6;
+    		animation-duration: 1000ms;
+    		animation-fill-mode: forwards;
+    		animation-timing-function: ease;
+		}
+
+		@keyframes example6 {
+    		from {transform: rotate(+46deg);}
+    		to {transform: rotate(0deg);}
+		}

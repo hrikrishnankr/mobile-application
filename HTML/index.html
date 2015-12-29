@@ -7,10 +7,16 @@
 <body>
 	<header>
 		<div class="logo">R</div>
-		<div class="hamburger" onclick="menuToggle()"><img src="../images/ham.png"></div>
+		<div class="hamburger1" onclick="menuToggle()">
+			<div class="hamburger" id="ham"  onclick="toggleMiddle()">
+				<div class="upper" id="up"></div>
+				<div class="middle" id="mid"></div>
+				<div class="lower" id="low"></div>
+			</div>
+		</div>
 		<div class="text">Alien Reader</div>
 	</header>
-	<main onclick="hide()">
+	<main onclick="hide()" id="content" onclick="toggleMiddle()">
 		<div class="popup" id="xyz">
 			<div><a href="#">Home</a></div>
 			<hr>
@@ -50,5 +56,6 @@
 		</table>
 	</footer>
 	<script type="text/javascript" src="../JS/index.js"></script>
+	<script type="text/javascript" src="../JS/hamburger.js"></script>
 </body>
 </html>
